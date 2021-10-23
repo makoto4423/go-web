@@ -10,5 +10,6 @@ func main() {
 	r := gin.Default()
 	userGroup := r.Group("/user")
 	userGroup.GET("/", user.Get)
-	r.Run(":80")
+	userGroup.GET("/list", user.List)
+	_ = r.Run(":80")
 }

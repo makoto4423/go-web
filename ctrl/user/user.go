@@ -12,3 +12,7 @@ func Get(ctx *gin.Context) {
 		"users": model.Get(),
 	})
 }
+
+func List(ctx *gin.Context) {
+	ctx.JSON(http.StatusOK, model.List())
+}

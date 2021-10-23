@@ -1,6 +1,10 @@
 datasource:
-  url: root:root@tcp(10.8.4.190:3306)/master?charset=utf8&parseTime=True&loc=Asia%2fShanghai
+  url: root:root@tcp(127.0.0.1:3306)/master?charset=utf8&parseTime=True&loc=Asia%2fShanghai
   idleCon: 10
   openCon: 200
   showSQL: true
   showExecTime: true
+
+rocketmq:
+  nameSrv: 192.168.2.132:9876
+  topic: go-web

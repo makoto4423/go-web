@@ -7,14 +7,14 @@ import (
 )
 
 type User struct {
-	// Id       int8   `json:"id" xorm:"int(11)"`
-	// Name     string `json:"name" xorm:"varchar(50)"`
-	// Password string `json:"password" xorm:"varchar(50)"`
-	// Status   string `json:"status" xorm:"varchar(10)"`
-	// Id       int8   `json:"id"`
-	// Name     string `json:"name"`
-	// Password string `json:"password"`
-	// Status   string `json:"status"`
+	//Id       int8   `json:"id" xorm:"int(11)"`
+	//Name     string `json:"name" xorm:"varchar(50)"`
+	//Password string `json:"password" xorm:"varchar(50)"`
+	//Status   string `json:"status" xorm:"varchar(10)"`
+	Id       int8   `json:"id"`
+	Name     string `json:"name"`
+	Password string `json:"password"`
+	Status   string `json:"status"`
 }
 
 func init() {
@@ -24,9 +24,9 @@ func init() {
 	user := new(User)
 	exists, err := engine.IsTableExist(user)
 	if err != nil {
-		log.Default().Fatal("error")
+		log.Fatal("error")
 	}
 	if !exists {
-		engine.CreateTables(&user)
+		engine.CreateTables(user)
 	}
 }
