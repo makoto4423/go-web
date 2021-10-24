@@ -4,6 +4,7 @@ import (
 	"go-web/ctrl/user"
 
 	"github.com/gin-gonic/gin"
+	_ "go-web/topic"
 )
 
 func main() {

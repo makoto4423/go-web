@@ -7,4 +7,5 @@ datasource:
 
 rocketmq:
   nameSrv: 192.168.2.132:9876
+  broker: 192.168.2.132:10909
   topic: go-web
