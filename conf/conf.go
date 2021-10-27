@@ -19,9 +19,11 @@ type config struct {
 		ShowExecTime bool   `yaml:"showExecTime"`
 	}
 	RocketMQ struct {
-		NameSrv string `yaml:"nameSrv"`
-		Broker  string `yaml:"broker"`
-		Topic   string `yaml:"topic"`
+		NameSrv  string `yaml:"nameSrv"`
+		Broker   string `yaml:"broker"`
+		Topic    string `yaml:"topic"`
+		Producer string `yaml:"producer"`
+		Consumer string `yaml:"consuemr" `
 	}
 }
 

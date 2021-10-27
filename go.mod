@@ -13,5 +13,5 @@ require (
 
 require (
 	github.com/kr/pretty v0.3.0 // indirect
-	golang.org/x/tools v0.0.0-20191029041327-9cc4af7d6b2c
+	golang.org/x/text v0.3.2
 )
