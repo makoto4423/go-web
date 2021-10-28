@@ -12,6 +12,7 @@ require (
 )
 
 require (
+	github.com/golang/protobuf v1.5.2
 	github.com/kr/pretty v0.3.0 // indirect
-	golang.org/x/text v0.3.2
+	google.golang.org/protobuf v1.26.0
 )

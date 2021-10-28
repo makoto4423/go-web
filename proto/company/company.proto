@@ -1,0 +1,10 @@
+syntax="proto3";
+option go_package = "/";
+
+package company;
+
+message Company{
+    string name = 1;
+    int32 code = 2;
+    repeated string employee = 3;
+}
