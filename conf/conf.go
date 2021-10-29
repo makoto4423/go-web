@@ -25,6 +25,9 @@ type config struct {
 		Producer string `yaml:"producer"`
 		Consumer string `yaml:"consuemr" `
 	}
+	Redis struct {
+		Url string `yaml:"url"`
+	}
 }
 
 func Init() {

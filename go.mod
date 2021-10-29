@@ -13,6 +13,7 @@ require (
 
 require (
 	github.com/golang/protobuf v1.5.2
+	github.com/gomodule/redigo v1.8.5 // indirect
 	github.com/kr/pretty v0.3.0 // indirect
 	google.golang.org/protobuf v1.26.0
 )

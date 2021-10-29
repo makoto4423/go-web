@@ -1,21 +1,24 @@
 package main
 
 import (
-	"go-web/consumer"
+	// "go-web/consumer"
 	"go-web/ctrl/user"
-	"go-web/producer"
+	"go-web/filter"
+	"go-web/redis"
 
-	_ "go-web/producer"
+	// "go-web/producer"
 
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
 	r := gin.Default()
+	r.Use(filter.Filter())
 	userGroup := r.Group("/user")
 	userGroup.GET("/", user.Get)
 	userGroup.GET("/list", user.List)
-	go producer.Start()
-	go consumer.Start()
+	// go producer.Start()
+	// go consumer.Start()
+	redis.Get()
 	_ = r.Run(":80")
 }

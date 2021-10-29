@@ -11,3 +11,5 @@ rocketmq:
   topic: go-web
   producer: producer
   consumer: consumer
+redis:
+  url: 10.8.4.190:6379
