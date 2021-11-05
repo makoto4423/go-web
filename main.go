@@ -5,6 +5,7 @@ import (
 	"go-web/ctrl/user"
 	"go-web/filter"
 	"go-web/redis"
+	"go-web/zookeeper"
 
 	// "go-web/producer"
 
@@ -20,5 +21,6 @@ func main() {
 	// go producer.Start()
 	// go consumer.Start()
 	redis.Get()
+	zookeeper.Get()
 	_ = r.Run(":80")
 }

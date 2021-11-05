@@ -15,6 +15,12 @@ func Get() {
 		fmt.Println(string(val.([]byte)))
 	}
 	con.Send("get", "abc")
-	reply, _ = con.Receive()
-	fmt.Println(reply)
+	// var err error
+	// reply, err = con.Receive()
+	// if err != nil {
+	// 	fmt.Print("redis get error")
+	// } else {
+	// 	fmt.Println(reply)
+
+	// }
 }

@@ -28,6 +28,9 @@ type config struct {
 	Redis struct {
 		Url string `yaml:"url"`
 	}
+	Zookeeper struct {
+		Url string `yaml:"url"`
+	}
 }
 
 func Init() {

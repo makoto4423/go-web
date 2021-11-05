@@ -12,8 +12,9 @@ require (
 )
 
 require (
+	github.com/go-zookeeper/zk v1.0.2
 	github.com/golang/protobuf v1.5.2
-	github.com/gomodule/redigo v1.8.5 // indirect
+	github.com/gomodule/redigo v1.8.5
 	github.com/kr/pretty v0.3.0 // indirect
 	google.golang.org/protobuf v1.26.0
 )

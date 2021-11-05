@@ -13,3 +13,5 @@ rocketmq:
   consumer: consumer
 redis:
   url: 10.8.4.190:6379
+zookeeper:
+  url: 10.8.4.190:2181
