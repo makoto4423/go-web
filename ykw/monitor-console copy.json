@@ -1,0 +1,26 @@
+{
+    "element" :{
+        "name":"",
+        "type":"",
+        "document":"",
+        "children":[],
+        "enum":[],
+        "enumType":"",
+        "default":"",
+        "desc":"",
+        "choice":""
+    },
+    "enum":{
+        "value":"",
+        "document":"",
+        "options":""
+    }
+}
+
+{
+    "value":"0",
+    "document":"否"
+},{
+    "value":"1",
+    "document":"是"
+}
